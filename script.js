@@ -24,4 +24,21 @@ window.addEventListener('load', (e) => {
             })
         }
     };
+
+    document.getElementsByClassName('backdrop')[0].addEventListener('click', (e) => {
+        let sidenav = document.getElementsByClassName('side-navbar')[0];
+        sidenav.classList.add('hidden');
+        e.currentTarget.classList.add('hidden');
+    });
+
+    document.getElementsByClassName('nav-toggle')[0].addEventListener('click', (e) => {
+        let sidenav = document.getElementsByClassName('side-navbar')[0];
+        let backdrop = document.getElementsByClassName('backdrop')[0];
+        if (sidenav.style.display === '' || sidenav.style.display === 'none') {
+            sidenav.classList.remove('hidden');
+            backdrop.classList.remove('hidden');
+        } else {
+            sidenav.classList.add('hidden');
+        }
+    });
 });
