@@ -166,6 +166,7 @@
 #personal-info > div {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    width: 60%;
 }
 
 .to-up {
@@ -493,5 +494,19 @@
     .side-nav a:hover::before {
         width: 150%;
         /* left: 0; */
+    }
+}
+
+@media (max-width: 600px) {
+    #personal-info > div {
+        width: 100%;
+    }
+
+    #personal-info  h2 {
+        font-size: larger;
+    }
+
+    #education h1 {
+        font-size: larger;
     }
 }
