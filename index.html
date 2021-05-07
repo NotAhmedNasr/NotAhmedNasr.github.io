@@ -1,14 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Ahmed Nasr</title>
 </head>
+
 <body>
-    <h1 style="text-align: center;">
-        Hello github.io~
-    </h1>
+    <nav class="navbar">
+        <h1 id="badge">
+            Ahmed Nasr
+        </h1>
+        <ul class="navbar-nav">
+            <li><a href="#welcom">Home</a></li>
+            <li><a href="#personal-info">Personal Information</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Texhnical Skills</a></li>
+            <li><a href="#contacts">Contact me</a></li>
+        </ul>
+    </nav>
+    <section id="welcom">
+        <div style="height: 200px;"></div>
+        <h1>Welcom to my Personal Page</h1>
+        <div class="scroll-down-div">
+            <h2>Keep scrolling for more</h2>
+            <img src="./logos/arrow.png" alt="arrow" class="arrow">
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <section id="personal-info">
+        <div class="bottom-up"
+            style="display: flex; flex-direction: column; align-items: center; border-bottom: 2px solid rgb(0, 195, 255); padding-bottom: 20px; width: 60%; margin-top: 100px;">
+            <img src="./logos/developer.gif" alt="dev" width="25%">
+            <h2>Hello, My name is Ahmed Nasr and I'm a Full Stack Developer.</h2>
+        </div>
+        <div class="bottom-up"
+            style="display: flex; flex-direction: column; align-items: center; border-bottom: 2px solid rgb(0, 195, 255); padding-bottom: 20px; width: 40%; margin-top: 100px; margin-left: auto; margin-right: 3em;">
+            <img src="./logos/eg.gif" alt="egypt" width="100px" height="100px" style="border-radius: 50%;">
+            <h2>I currently live in Egypt</h2>
+        </div>
+        <div class="bottom-up"
+            style="display: flex; flex-direction: column; align-items: center; border-bottom: 2px solid rgb(0, 195, 255); padding: 10px 20px; width: 60%; margin-top: 100px; margin-left: 3em; margin-right: auto;"">
+            <h2 style=" border-bottom: 3px solid rgb(0, 160, 152); margin: 0;">About me</h2>
+            <p style="font-size: large;">
+                Passionate Person, graduate of Systems Development track from ITI, graduate of Petroleum Engineering
+                Department from faculty of Petroleum and Mining engineering, Suez University. Smart, hard-working, eager
+                to
+                learn new technologies and apply what I learn to improve what I do.
+            </p>
+        </div>
+    </section>
+    <section id="education">
+        <h1 class="bottom-up"
+            style="width: 50%; margin-left: auto; border-bottom: 3px solid #BF272D; text-align: center; padding-bottom: 1em;">
+            9 Month Professional Diploma of Professional Web Development And BI, Systems Development Track</h1>
+    </section>
+    <section id="skills">
+        <div class="grid-card">
+            <img src="./logos/express.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/htm.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/mongo.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/JS.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/NET.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/node.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/react.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/sql.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/ts.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/angular.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/aspcore.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/bi.png" alt="skill">
+        </div>
+        <div class="grid-card">
+            <img src="./logos/Core.png" alt="skill">
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="contact bottom-up" style="padding-bottom: 1em;">
+            <img src="./logos/github.jpg" alt="git" style="width: 20%;">
+            <h1>NotAhmedNasr</h1>
+        </div>
+        <div class="contact bottom-up" style="padding-bottom: 1em;">
+            <img src="./logos/linked.png" alt="git" style="width: 20%;">
+            <h1>ahmedalinasr</h1>
+        </div>
+        <div class="contact bottom-up">
+            <img src="./logos/gmail.jpg" alt="git" style="width: 20%;">
+            <h1>ahmed0alinasr@gmail.com</h1>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
