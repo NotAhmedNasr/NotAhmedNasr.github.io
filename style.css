@@ -497,7 +497,9 @@
 
 @media (max-width: 600px) {
     #personal-info > div {
-        width: 90%
+        width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     #personal-info  h2 {
