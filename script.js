@@ -1,7 +1,7 @@
 window.addEventListener('load', (e) => {
     let scrollPosition = window.pageYOffset;
-    const backdrop = document.getElementsByClassName('side-navbar')[0];
-    const sideNav = document.getElementsByClassName('backdrop')[0];
+    const sideNav = document.getElementsByClassName('side-navbar')[0];
+    const backdrop = document.getElementsByClassName('backdrop')[0];
     window.onscroll = (e) => {
         let currScrollPosition = window.pageYOffset;
         if (currScrollPosition > scrollPosition) {

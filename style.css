@@ -381,7 +381,7 @@
     /* left: 0; */
 }
 
-
+ 
 @media  (max-width: 1100px) {
     .navbar-nav {
         display: none;
@@ -484,7 +484,6 @@
         position: absolute;
         top: 0;
         left: -20%;
-        /* left: 50%; */
         transition-duration: 0.2s;
         transition-timing-function: ease-in-out;
         transform: skewX(45deg);
@@ -493,13 +492,12 @@
     
     .side-nav a:hover::before {
         width: 150%;
-        /* left: 0; */
     }
-}
+} 
 
 @media (max-width: 600px) {
     #personal-info > div {
-        width: 100%;
+        width: 90%
     }
 
     #personal-info  h2 {
