@@ -1,5 +1,7 @@
 window.addEventListener('load', (e) => {
     let scrollPosition = window.pageYOffset;
+    const backdrop = document.getElementsByClassName('side-navbar')[0];
+    const sideNav = document.getElementsByClassName('backdrop')[0];
     window.onscroll = (e) => {
         let currScrollPosition = window.pageYOffset;
         if (currScrollPosition > scrollPosition) {
@@ -18,7 +20,6 @@ window.addEventListener('load', (e) => {
         let skills = document.getElementById('skills');
         let cards = document.getElementsByClassName('grid-card');
         if (skills.getBoundingClientRect().top < 500 && skills.getBoundingClientRect().top > 0) {
-            console.log('dd');
             [].forEach.call(cards, (el) => {
                 el.classList.add('animate');
             })
@@ -26,19 +27,24 @@ window.addEventListener('load', (e) => {
     };
 
     document.getElementsByClassName('backdrop')[0].addEventListener('click', (e) => {
-        let sidenav = document.getElementsByClassName('side-navbar')[0];
-        sidenav.classList.add('hidden');
+        sideNav.classList.add('hidden');
         e.currentTarget.classList.add('hidden');
     });
 
     document.getElementsByClassName('nav-toggle')[0].addEventListener('click', (e) => {
-        let sidenav = document.getElementsByClassName('side-navbar')[0];
-        let backdrop = document.getElementsByClassName('backdrop')[0];
-        if (sidenav.style.display === '' || sidenav.style.display === 'none') {
-            sidenav.classList.remove('hidden');
+        if (sideNav.style.display === '' || sideNav.style.display === 'none') {
+            sideNav.classList.remove('hidden');
             backdrop.classList.remove('hidden');
         } else {
-            sidenav.classList.add('hidden');
+            sideNav.classList.add('hidden');
         }
+    });
+
+    let sideLinks = document.querySelectorAll('.side-nav a');
+    [].forEach.call(sideLinks, (link) => {
+        link.addEventListener('click', e => {
+            sideNav.classList.add('hidden');
+            backdrop.classList.add('hidden');
+        });
     });
 });
