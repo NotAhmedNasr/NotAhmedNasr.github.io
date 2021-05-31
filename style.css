@@ -501,6 +501,11 @@
     }
 } 
 
+h1 > a {
+    color: inherit;
+    text-decoration: none;
+}
+
 @media (max-width: 600px) {
     #personal-info > div {
         width: 95%;
